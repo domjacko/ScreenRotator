@@ -10,7 +10,7 @@ APPINDICATOR_ID = "screenrotator"
 orientation = "normal"
 
 def main():
-    indicator = AppIndicator.Indicator.new(APPINDICATOR_ID, os.path.abspath('/home/dom/Git/ScreenRotator/icon.svg'), AppIndicator.IndicatorCategory.SYSTEM_SERVICES)
+    indicator = AppIndicator.Indicator.new(APPINDICATOR_ID, os.path.abspath('./icon.svg'), AppIndicator.IndicatorCategory.SYSTEM_SERVICES)
     indicator.set_status(AppIndicator.IndicatorStatus.ACTIVE)
     indicator.set_menu(build_menu())
     Gtk.main()
